@@ -1,0 +1,3 @@
+para el proyecto se utilizaron las librerias de python:
+1. pandas: para el analisis y manipulacion de datasets
+2. numpy: herramienta para operaciones
