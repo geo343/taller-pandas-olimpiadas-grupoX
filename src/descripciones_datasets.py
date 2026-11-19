@@ -1,0 +1,9 @@
+display(round(atletas.describe(include="all")))
+print("\n")
+display(round(noc.describe(include="all")))
+print("\n")
+#comparacion
+comparacion=pd.DataFrame()
+comparacion["pais"]=atletas["NOC"]
+comparacion["NOC"]=noc['NOC']
+display(comparacion.describe(include="all"))
