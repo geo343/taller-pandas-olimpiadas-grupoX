@@ -1,0 +1,5 @@
+atletas["grupo_etario"]=atletas["Age"].map(lambda x: "menor" if x<18 else "adulto joven" if 18<=x<=34 else "mayor")
+display(pd.crosstab(atletas["grupo_etario"], atletas["Sex"]))
+display(atletas.isna().groupby("grupo_etario")[["Height","Weight"]].sum())
+display(atletas.notna().groupby("grupo_etario")[["Height","Weight"]].sum())
+display(atletas.groupby("grupo_etario")["medalla"].sum())
